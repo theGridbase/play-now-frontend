@@ -6,8 +6,8 @@ import Loginas from "./(pages)/login-as/page"
 export default function Home() {
   return (
     <div>
-     <Loginas/>
-     {/* <Groundonboarding/> */}
+     {/* <Loginas/> */}
+     <Groundonboarding/>
     </div>
   );
 }
