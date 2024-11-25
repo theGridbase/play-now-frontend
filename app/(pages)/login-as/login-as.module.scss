@@ -1,0 +1,221 @@
+// styles/Login.module.scss
+
+.loginContainer {
+    display: flex;
+    height: 100vh;
+    justify-content: center;
+    align-items: center;
+    background-color: #f8f9fa;
+    position: relative;
+  }
+  .imageBackground {
+    position: absolute;
+    top: 0;
+    left: 0;
+    right: 0;
+    height: 50vh;
+    display: flex;
+    justify-content: center;
+    overflow: hidden;
+    background-image: url('/assets/svgs/or.svg');
+    background-position: center;
+    background-size: cover;
+    
+  }
+  
+  .loginCard {
+    z-index: 1;
+    width: 636px;
+    height: 659.28px;
+    flex-shrink: 0;
+    display: flex; 
+    flex-direction: column;
+    justify-content: center; 
+    align-items: center;
+    border-radius: 6px;
+    background: #FFF;
+    box-shadow: 0px 30px 40px 0px rgba(2, 45, 62, 0.08);
+  
+  
+.logo{
+    color: var(--black, #010000);
+font-family: "SF Pro Display";
+font-size: 32px;
+font-style: normal;
+font-weight: 700;
+line-height: normal;
+  }
+  .p{
+    display: flex;
+    width: 241.141px;
+    height: 18px;
+    flex-direction: column;
+    justify-content: center;
+    flex-shrink: 0; 
+    color: #212529;
+text-align: center;
+font-family: Karla;
+font-size: 14.9px;
+font-style: normal;
+font-weight: 400;
+line-height: 25.29px; /* 169.732% */
+padding-top: 13px;
+
+  }
+  .btnWrapper{
+    display: flex;
+    flex-direction: column;
+    gap:25px;
+    margin-top: 80px;
+    margin-bottom: 60px;
+    .customerBtn{
+        width: 508px;
+height: 65px;
+flex-shrink: 0;
+border-radius: 100px;
+background: #E73725;
+color: #FFF;
+font-family: Poppins;
+font-size: 20px;
+font-style: normal;
+font-weight: 600;
+line-height: normal;
+    }
+    .ownerBtn{
+        width: 508px;
+height: 65px;
+flex-shrink: 0;
+border-radius: 100px;
+border: 1px solid #E73725;
+color: var(--orange, #E73725);
+font-family: Poppins;
+font-size: 20px;
+font-style: normal;
+font-weight: 400;
+line-height: normal;
+    }
+  }
+  .separator {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    width: 80%;
+    margin: 27px 0;
+  
+    &::before,
+    &::after {
+      content: "";
+      flex: 1;
+      border-top: 1px solid #ccc; /* Adjust the color of the lines */
+      margin: 0 10px; /* Adds small spacing between the lines and the "Or" text */
+    }
+  
+    span {
+        color: #212529;
+        font-family: Karla;
+        font-size: 14.9px;
+        font-style: normal;
+        font-weight: 400;
+        line-height: 25.29px; /* 169.732% */
+        padding-right: 40px;
+        padding-left: 40px;
+    }
+  }
+  
+
+  .socialLogin{
+    display: flex;
+    gap: 24px;
+   
+    .socialButton {
+      border-radius: 22px !important;
+      background: #EA4335 !important;
+      display: flex !important;
+      width: 258px !important;
+      height: 36px;
+      justify-content: center !important;
+      align-items: center !important;
+      gap: 8px !important;
+      padding: 8px 9px !important;
+      color: #FFF !important;
+      font-family: Karla !important;
+      font-size: 16px !important;
+      font-style: normal !important;
+      font-weight: 400 !important;
+  }
+  
+      
+      .socialButton2 {
+        border-radius: 22px !important;
+        background: #1877F2 !important;
+        padding: 9px 9px !important;
+        display: flex !important;
+        width: 258px !important;
+        justify-content: center !important;
+        align-items: center !important;
+        gap: 8px !important;
+        color: #FFF !important;
+        font-family: Karla !important;
+        font-size: 16px !important;
+        font-style: normal !important;
+        font-weight: 400 !important;
+        height: 36px;
+    }
+    
+  }
+}
+@media (max-width: 768px) {
+    .loginCard {
+      width: 100%;
+      height: auto;
+      padding: 20px; /* Reduced padding on mobile */
+    }
+  
+    .logo {
+      font-size: 24px;
+    }
+  
+    .p {
+      font-size: 14px;
+      width: 100%;
+      padding: 0 20px;
+    }
+  
+    .btnWrapper {
+      margin-top: 30px;
+    }
+  
+    .socialLogin {
+      gap: 12px;
+    }
+  
+    .customerBtn,
+    .ownerBtn,
+    .socialButton,
+    .socialButton2 {
+      width: 100%; /* Ensure buttons are full width on mobile */
+      height: 50px; /* Reduce button height on mobile */
+    }
+  }
+  
+  @media (max-width: 480px) {
+    .loginContainer {
+      padding: 10px; /* Add more padding on small screens */
+    }
+  
+    .logo {
+      font-size: 20px;
+    }
+  
+    .p {
+      font-size: 14px;
+      width: 100%;
+    }
+  
+    .customerBtn,
+    .ownerBtn,
+    .socialButton,
+    .socialButton2 {
+      height: 45px; /* Further reduce button height */
+    }
+  }

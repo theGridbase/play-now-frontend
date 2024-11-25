@@ -1,0 +1,259 @@
+
+.container {
+  display: flex;
+  flex-direction: row;
+  height: 100vh;
+  overflow: hidden;
+
+  @media (max-width: 768px) {
+    flex-direction: column;
+    
+  }
+}
+
+.formContainer {
+  flex: 1;
+  padding: 2rem;
+  background-color: #ffffff;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1);
+  
+}
+
+.steps {
+  width: 100%;
+  max-width: 500px;
+  
+}
+
+.stepContent {
+  
+  text-align: center;
+}
+
+.heading {
+  color: #000;
+font-family: Poppins;
+font-size: 36px;
+font-style: normal;
+font-weight: 600;
+line-height: normal;
+margin-top: 41px;
+margin-bottom: 21px;
+}
+
+.subheading {
+  color: #9B9B9B;
+text-align: center;
+font-family: Poppins;
+font-size: 16px;
+font-style: normal;
+font-weight: 400;
+line-height: 165%; 
+margin-bottom: 43px;
+}
+
+.loginForm {
+  width: 100%;
+}
+.label{
+  color: #000;
+font-family: Poppins;
+font-size: 18px;
+font-style: normal;
+font-weight: 500;
+line-height: normal;
+}
+.placeholder {
+  width: 508px !important;
+  height: 48px !important;
+  flex-shrink: 0 !important;
+  border-radius: 100px !important;
+  background: #FFF !important;
+  font-family: Poppins !important;
+  font-size: 14px !important;
+  font-style: normal !important;
+  font-weight: 400 !important;
+  line-height: normal !important;
+  padding-left: 29px !important;
+}
+
+.extraOptions {
+  display: flex;
+  margin-bottom: 74px;
+  margin-top: 19px;
+  gap:243px;
+  width: 508px;
+  
+
+}
+.forgotPassword{
+  color: #E73725;
+  font-family: Poppins;
+  font-size: 14px;
+  font-style: normal;
+  font-weight: 500;
+  line-height: normal; 
+}
+.remember{
+  color: #000;
+  font-family: Poppins;
+  font-size: 14px;
+  font-style: normal;
+  font-weight: 500;
+  line-height: normal;
+
+}
+.loginButton, .nextButton, .completeButton {
+  width: 508px !important;
+height: 65px !important;
+flex-shrink: 0;
+border-radius: 100px !important;
+background-color: #E73725 !important;
+color: #FFF;
+font-family: Poppins !important;
+font-size: 20px !important;
+font-style: normal !important;
+font-weight: 600 !important;
+line-height: normal;
+
+
+}
+
+.separator {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  width: 100%;
+  margin: 27px 0;
+
+  &::before,
+  &::after {
+    content: "";
+    flex: 1;
+    border-top: 1px solid #ccc; /* Adjust the color of the lines */
+    margin: 0 10px; /* Adds small spacing between the lines and the "Or" text */
+  }
+
+  span {
+    color: #7E7E7E;
+    font-family: Poppins;
+    font-size: 16px;
+    font-style: normal;
+    font-weight: 400;
+      padding-right: 40px;
+      padding-left: 40px;
+  }
+}
+
+.socialButtons {
+  display: flex;
+  justify-content: space-around;
+  margin-bottom: 1rem;
+  gap:23px;
+  margin-bottom: 23px;
+}
+.socialButton{
+  width: 238px !important;
+height: 64px  !important;
+flex-shrink: 0  !important;
+color: #2E2E2E  !important;
+font-family: Poppins  !important;
+font-size: 20px !important;
+font-style: normal  !important;
+font-weight: 500  !important;
+line-height: normal  !important;
+border-radius: 50px  !important;
+}
+
+.register {
+  color: #000;
+font-family: Poppins;
+font-size: 14px;
+font-style: normal;
+font-weight: 500;
+line-height: normal;
+text-align: center;
+.create{
+  color: #E73725;
+font-family: Poppins;
+font-size: 14px;
+font-style: normal;
+font-weight: 500;
+line-height: normal;
+}
+}
+
+.imageContainer {
+  flex: 1;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+
+  @media (max-width: 768px) {
+    display: none;
+  }
+}
+
+.image {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+}
+@media (max-width: 768px) {
+  .container {
+    flex-direction: column;
+  }
+
+  .formContainer {
+    padding: 1rem;
+  }
+
+  .heading {
+    font-size: 24px;
+    margin-top: 20px;
+  }
+
+  .subheading {
+    font-size: 14px;
+    margin-bottom: 20px;
+  }
+
+  .placeholder {
+    width: 100%; /* Full width for smaller screens */
+  }
+
+  .extraOptions {
+    flex-direction: column;
+    gap: 10px;
+    width: 100%; /* Full width for smaller screens */
+    margin-bottom: 30px;
+  }
+
+  .loginButton, .nextButton, .completeButton {
+    width: 100%; /* Full width for smaller screens */
+    height: 55px;
+  }
+
+  .socialButtons {
+    flex-direction: column;
+    width: 100%; /* Full width for smaller screens */
+    gap: 10px;
+  }
+
+  .socialButton {
+    width: 100%; /* Full width for smaller screens */
+    height: 55px;
+  }
+
+  .register {
+    font-size: 12px;
+  }
+
+  .imageContainer {
+    display: none;
+  }
+}
