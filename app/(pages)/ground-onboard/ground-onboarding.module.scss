@@ -1,52 +1,78 @@
 // styles/Home.module.scss
+
 .container {
-    max-width: 1200px;
-    margin: 0 auto;
-    padding: 40px 20px;
+  text-align: center;
+  margin: 40px 0;
+  background-color: #ffff;
+  margin-left: 287px;
+  margin-right: 287px;
+}
+
+.progressContainer {
+  width: 80%;
+  margin: 20px auto;
+}
+
+.sportSelectionContainer {
+  h2 {
+    color: #000;
+    font-family: Poppins;
+    font-size: 38px;
+    font-style: normal;
+    font-weight: 500;
+    line-height: normal;
+    margin-bottom: 88px;
+  }
+
+  .cardCustom{
+    width: 267.131px !important;
+    height: 161.006px !important;
+    flex-shrink: 0 !important;
+    border-radius: 8.596px !important;
+    border: 1.322px solid #F2F2F2 !important;
+    background: #FEFEFE !important;
+    transition: background-color 0.3s, border-color 0.3s;
+  
+    img {
+      margin-top: 20px;
+    }
+  
+    p {
+      margin-top: 29px;
+      color: #181818;
+      font-family: Poppins;
+      font-size: 13.224px;
+      font-style: normal;
+      font-weight: 400;
+      line-height: normal;
+    }
+  
+    &:hover {
+      background-color: #E73725 !important;
+      border-color: #E73725 !important;
+    }
+  
+    &.active {
+      border-color: #E73725;
+      background-color: #E73725;
+      color: white;
+    }
   }
   
-  .progressBar {
-    margin-bottom: 40px;
+ 
+
+  .nextButtonContainer {
+    width: 222px !important;
+    height: 65px !important;
+    flex-shrink: 0 !important;
+    border-radius: 100px !important;
+border: 1px solid var(--orange, #E73725) !important;
+background: rgba(231, 55, 37, 0.00) !important;
+color: var(--orange, #E73725);
+font-family: Poppins;
+font-size: 20px;
+font-style: normal;
+font-weight: 600;
+line-height: normal;
   }
-  
-  .sportSelection {
-    text-align: center;
-    margin-bottom: 40px;
-  
-    h2 {
-      font-size: 24px;
-      margin-bottom: 20px;
-    }
-  
-    .ant-card {
-      border: 1px solid #d9d9d9;
-      text-align: center;
-      transition: all 0.3s ease;
-      img {
-        max-width: 100px;
-        margin: 20px 0;
-      }
-    }
-  
-    .ant-card:hover {
-      border-color: #f5222d;
-    }
-  
-    .activeCard {
-      border: 2px solid #f5222d;
-    }
-  }
-  
-  .nextButton {
-    text-align: right;
-    margin-bottom: 40px;
-  
-    button {
-      background-color: #f5222d;
-      border: none;
-      &:hover {
-        background-color: #d41a1a;
-      }
-    }
-  }
-  
+}

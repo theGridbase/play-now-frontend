@@ -1,51 +1,64 @@
-// components/Footer.tsx
-import React from 'react';
-import { Input, Button } from 'antd';
-import { SearchOutlined } from '@ant-design/icons';
-import styles from './Footer.module.scss';
+import { Layout, Input, Button, Row, Col } from 'antd';
+import styles from './footer.module.scss';
 import Image from 'next/image';
-const Footer = () => {
+const { Footer } = Layout;
+
+const CustomFooter = () => {
   return (
-    <footer className={styles.footer}>
+    <Footer className={styles.footer}>
       <div className={styles.container}>
-        <div className={styles.logoSection}>
-          <Image src="/assets/svgs/logo.svg" width={100} height={100} alt=""/>
-          <p className={styles.description}>We give you the best stadiums in town</p>
-        </div>
-        <div className={styles.linksSection}>
-          <div className={styles.column}>
-            <h4>Company</h4>
-            <ul>
-              <li>About</li>
-              <li>Local Service Provider</li>
-              <li>Travel agencies</li>
-            </ul>
-          </div>
-          <div className={styles.column}>
-            <h4>Help</h4>
-            <ul>
-              <li>Terms & Conditions</li>
-              <li>Privacy Policy</li>
-            </ul>
-          </div>
-          <div className={styles.column}>
-            <h4>Newsletter</h4>
-            <div className={styles.newsletter}>
-              <Input
-                className={styles.emailInput}
-                placeholder="Enter your email address"
-                suffix={<SearchOutlined />}
-              />
-              <Button className={styles.subscribeButton}>Subscribe Now</Button>
+        <Row justify="space-between">
+         
+          <Col xs={24} sm={6}>
+            <div className={styles.logoSection}>
+            <Image src="/assets/svgs/logo.svg" width={100}  height={100} alt=""/>
+              <p>We give you the best stadiums in town</p>
             </div>
-          </div>
+          </Col>
+
+          {/* Company Section */}
+          <Col xs={24} sm={6}>
+            <div className={styles.footerSection}>
+              <h4>COMPANY</h4>
+              <ul>
+                <li>About</li>
+                <li>Local Service Provider</li>
+                <li>Travel Agencies</li>
+              </ul>
+            </div>
+          </Col>
+
+          {/* Help Section */}
+          <Col xs={24} sm={6}>
+            <div className={styles.footerSection}>
+              <h4>HELP</h4>
+              <ul>
+                <li>Terms & Conditions</li>
+                <li>Privacy Policy</li>
+              </ul>
+            </div>
+          </Col>
+
+          {/* Newsletter Section */}
+          <Col xs={24} sm={6}>
+            <div className={styles.newsletterSection}>
+              <h4>NEWSLETTER</h4>
+              <Input
+                placeholder="Enter your email address"
+                className={styles.input}
+              />
+              <Button className={styles.subscribeButton} type="primary">
+                Subscribe Now
+              </Button>
+            </div>
+          </Col>
+        </Row>
+        <div className={styles.copyright}>
+          <p>© Copyright 2022, All Rights Reserved</p>
         </div>
       </div>
-      <div className={styles.footerBottom}>
-        <p>&copy; Copyright 2022, All Rights Reserved</p>
-      </div>
-    </footer>
+    </Footer>
   );
 };
 
-export default Footer;
+export default CustomFooter;

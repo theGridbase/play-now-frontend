@@ -1,0 +1,41 @@
+.uploadContainer {
+    text-align: center;
+    margin: auto;
+    max-width: 500px;
+  
+    h2 {
+      font-size: 24px;
+      font-weight: bold;
+    }
+  
+    p {
+      font-size: 14px;
+      margin-bottom: 20px;
+      color: #757575; // Grey text for instructions
+    }
+  
+    .uploadBox {
+      border: 2px dashed #f5222d; // Red dashed border
+      padding: 50px;
+      border-radius: 8px;
+      display: flex;
+      justify-content: center;
+      align-items: center;
+    }
+  
+    .uploadButton {
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      background-color: #fff; // White button
+      border: 1px solid #f5222d;
+      color: #f5222d; // Red text
+      border-radius: 4px;
+      padding: 10px 20px;
+  
+      &:hover {
+        background-color: #fff5f5; // Light red on hover
+      }
+    }
+  }
+  

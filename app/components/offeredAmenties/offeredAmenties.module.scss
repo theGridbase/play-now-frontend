@@ -1,0 +1,53 @@
+.amenitiesContainer {
+    text-align: center;
+    margin: auto;
+    max-width: 800px;
+    padding: 20px;
+  
+    h2 {
+      font-size: 24px;
+      font-weight: bold;
+    }
+  
+    p {
+      font-size: 14px;
+      color: #757575; // Grey text
+      margin-bottom: 30px;
+    }
+  
+    h3 {
+      font-size: 18px;
+      font-weight: 600;
+      margin-top: 30px;
+      margin-bottom: 15px;
+    }
+  
+    .amenitiesGrid {
+      display: flex;
+      justify-content: center;
+    }
+  
+    .amenityCard {
+      display: flex;
+      flex-direction: column;
+      align-items: center;
+      justify-content: center;
+      border: 1px solid #e8e8e8;
+      border-radius: 8px;
+      padding: 20px;
+      text-align: center;
+      cursor: pointer;
+      transition: all 0.3s;
+  
+      p {
+        margin-top: 10px;
+        font-size: 14px;
+        font-weight: 500;
+      }
+  
+      &:hover {
+        border-color: #f5222d;
+      }
+    }
+  }
+  
